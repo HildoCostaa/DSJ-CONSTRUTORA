@@ -15,6 +15,30 @@ body{
 }
 
 /* ==================================================
+   SELEÇÃO
+================================================== */
+
+::selection{
+
+    background:var(--color-primary);
+
+    color:var(--color-white);
+
+}
+
+/* ==================================================
+   FOCUS
+================================================== */
+
+:focus-visible{
+
+    outline:2px solid var(--color-primary);
+
+    outline-offset:4px;
+
+}
+
+/* ==================================================
    CONTAINER
 ================================================== */
 
@@ -23,6 +47,8 @@ body{
     width:min(calc(100% - 2rem),var(--container-width));
 
     margin-inline:auto;
+
+    position:relative;
 
 }
 
@@ -60,5 +86,137 @@ h4{
 p{
 
     line-height:1.7;
+
+}
+
+/* ==================================================
+   HEADER
+================================================== */
+
+.header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    padding:1.5rem 0;
+
+    background:transparent;
+
+    z-index:1000;
+
+    transition:background .3s ease,
+               padding .3s ease,
+               box-shadow .3s ease;
+
+}
+
+/* ==================================================
+   HEADER CONTAINER
+================================================== */
+
+.header .container{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+/* ==================================================
+   LOGO
+================================================== */
+
+.header-logo{
+
+    display:flex;
+
+    align-items:center;
+
+    text-decoration:none;
+
+}
+
+.header-logo img{
+
+    display:block;
+
+    height:60px;
+
+    width:auto;
+
+}
+
+/* ==================================================
+   BOTÃO MENU
+================================================== */
+
+.header-menu-button{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:48px;
+
+    height:48px;
+
+    cursor:pointer;
+
+    background:none;
+
+    border:none;
+
+    padding:0;
+
+}
+
+/* ==================================================
+   ÍCONE MENU
+================================================== */
+
+.header-menu-icon{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    width:22px;
+
+    height:18px;
+
+}
+
+.header-menu-icon span{
+
+    width:100%;
+
+    height:2px;
+
+    border-radius:999px;
+
+    background:var(--color-white);
+
+    transition:all .3s ease;
+
+}
+
+/* ==================================================
+   HOVER
+================================================== */
+
+.header-menu-button:hover .header-menu-icon span{
+
+    transform:scaleX(.85);
 
 }

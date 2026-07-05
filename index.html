@@ -15,14 +15,44 @@
     <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-    <header id="header"></header>
+    <header class="header" id="header">
+    
+        <div class="container">
+
+            <!-- Logo -->
+            <a href="#hero" class="header-logo" aria-label="Voltar ao início">
+                <img
+                    src="assets/img/logo/logo-dsj.svg"
+                    alt="Logo da DSJ Construtora">
+            </a>
+
+            <!-- Botão do menu -->
+            <button
+                class="header-menu-button"
+                type="button"
+                aria-label="Abrir menu"
+                aria-expanded="false"
+                aria-controls="navigation-drawer">
+
+                <span class="header-menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+
+            </button>
+
+        </div>
+    </header>
 
     <!-- Navigation Drawer -->
 
     <div
         class="navigation-drawer"
         id="navigation-drawer"
-        aria-hidden="true">
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true">
 
         <!-- Overlay -->
 
@@ -120,35 +150,19 @@
 
     </div>
 
-    <div class="container">
+    <main id="main">
 
-        <!-- Logo -->
-        <a href="#hero" class="header-logo" aria-label="Voltar ao início">
-            <img
-                src="assets/img/logo/logo-dsj.svg"
-                alt="Logo da DSJ Construtora">
-        </a>
+        <!-- Hero -->
+        
+        <!-- Quem Somos -->
 
-        <!-- Botão do menu -->
-        <button
-            class="header-menu-button"
-            type="button"
-            aria-label="Abrir menu"
-            aria-expanded="false"
-            aria-controls="navigation-drawer">
+        <!-- Missão, Visão e Valores -->
 
-            <span class="header-menu-icon">
-                <span></span>
-                <span></span>
-                <span></span>
-            </span>
+        <!-- Obras -->
 
-        </button>
+        <!-- Contato -->
 
-    </div>
-
-
-    <main id="main"></main>
+    </main>
 
     <footer id="footer"></footer>
 
