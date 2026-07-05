@@ -50,3 +50,34 @@ Desenvolver um website institucional responsivo para a DSJ Construtora, apresent
 - Blog.
 - Área do cliente.
 - Integrações externas além das definidas no projeto.
+
+---
+
+# 4. Estrutura Física do Projeto
+
+```text
+dsj-construtora/
+│
+├── index.html
+│
+├── assets/
+│   ├── css/
+│   │   ├── style.css
+│   │   ├── variables.css
+│   │   ├── responsive.css
+│   │   └── animations.css
+│   │
+│   ├── js/
+│   │   ├── main.js
+│   │   ├── menu.js
+│   │   ├── scroll.js
+│   │   ├── counter.js
+│   │   └── form.js
+│   │
+│   ├── img/
+│   ├── icons/
+│   └── fonts/
+│
+├── README.md
+└── DAP.md
+```
