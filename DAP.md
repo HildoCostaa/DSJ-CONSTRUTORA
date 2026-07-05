@@ -60,19 +60,18 @@ dsj-construtora/
 │
 ├── index.html
 │
-├── assets/
-│   ├── css/
-│   │   ├── style.css
-│   │   ├── variables.css
-│   │   ├── responsive.css
-│   │   └── animations.css
+|-----css/
+│   │   ├-- style.css
+│   │   ├-- variables.css
+│   │   ├-- responsive.css
+│   │   └-- animations.css
 │   │
 │   ├── js/
-│   │   ├── main.js
-│   │   ├── menu.js
-│   │   ├── scroll.js
-│   │   ├── counter.js
-│   │   └── form.js
+│   │   ├-- main.js
+│   │   ├-- menu.js
+│   │   ├-- scroll.js
+│   │   ├-- counter.js
+│   │   └-- form.js
 │   │
 │   ├── img/
 │   ├── icons/
