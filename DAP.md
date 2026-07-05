@@ -58,9 +58,10 @@ Desenvolver um website institucional responsivo para a DSJ Construtora, apresent
 ```text
 dsj-construtora/
 │
-├── index.html
+├-- index.html
 │
 |-----css/
+|       |--reset.css
 │   │   ├-- style.css
 │   │   ├-- variables.css
 │   │   ├-- responsive.css
@@ -73,10 +74,10 @@ dsj-construtora/
 │   │   ├-- counter.js
 │   │   └-- form.js
 │   │
-│   ├── img/
-│   ├── icons/
-│   └── fonts/
+│   ├-- img/
+│   ├-- icons/
+│   └-- fonts/
 │
-├── README.md
-└── DAP.md
+├-- README.md
+└-- DAP.md
 ```
