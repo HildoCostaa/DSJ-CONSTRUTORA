@@ -1,3 +1,6 @@
+import './menu.js';
+import './scroll.js';
+import './form.js';
 /*
 ==========================================
 
@@ -13,3 +16,6 @@ document.addEventListener("DOMContentLoaded",()=>{
     console.log("DSJ Construtora inicializada.");
 
 });
+
+
+

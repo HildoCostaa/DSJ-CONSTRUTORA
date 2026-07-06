@@ -33,3 +33,57 @@
     opacity:1;
 
 }
+
+/* ==================================================
+   HERO SCROLL
+================================================== */
+
+@keyframes scrollIndicator{
+
+    0%{
+
+        opacity:0;
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        opacity:0;
+
+        transform:translateY(12px);
+
+    }
+
+}
+
+/* ==================================================
+   FADE UP
+================================================== */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
