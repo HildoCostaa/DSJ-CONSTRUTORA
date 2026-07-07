@@ -111,7 +111,7 @@ p{
 
     z-index:1000;
 
-    background:transparent;
+    background: var(--color-primary);
 
     transition:
         background .35s ease,
@@ -179,7 +179,7 @@ p{
 
     display:block;
 
-    height:88px;
+    height:95px;
 
     width:auto;
 
@@ -544,45 +544,24 @@ p{
     color:var(--color-white);
 
 }
-
-/* ==================================================
-   HERO
-================================================== */
-
-/* ==================================================
-   HERO
-================================================== */
-
 /* ==================================================
    HERO
 ================================================== */
 
 .hero{
-
     position:relative;
-
     min-height:100vh;
-
     display:flex;
-
     align-items:center;
-
     overflow:hidden;
-
     background-image:url("../img/hero/hero-bg.jpg");
-
     background-size:cover;
-
     background-position:center;
-
     background-repeat:no-repeat;
-
 }
-
 /* ==================================================
    HERO OVERLAY
 ================================================== */
-
 .hero-overlay{
 
     position:absolute;
@@ -593,7 +572,7 @@ p{
         linear-gradient(
             90deg,
             rgba(14,22,30,.88) 0%,
-            rgba(14,22,30,.72) 45%,
+            rgba(14,22,30,.72) 80%,
             rgba(14,22,30,.35) 100%
         );
 
@@ -665,9 +644,9 @@ p{
 .hero-title{
 
     font-size:clamp(3.5rem,7vw,5.8rem);
-
+    color:rgb(36, 34, 34);
+    font-family:var(--font-title);
     line-height:1;
-
     max-width:700px;
 
 }
@@ -928,12 +907,13 @@ p{
 ================================================== */
 
 .mission{
-    background:#f8f8f8;
+    background: var(--color-primary);
 }
 
 .mission .section-tag{
     display:block;
     text-align:center;
+    color:var(--color-white);
     margin-bottom:1rem;
 }
 
@@ -1065,19 +1045,25 @@ p{
 ================================================== */
 
 .projects{
-    background:#f8f8f8;
+    background:var(--color-primary);
 }
+.projects .section-tag{
+    color: var(--color-white);
+}
+
+
 
 .projects .section-tag,
 .projects .section-title,
 .projects .section-description{
+    
     text-align:center;
 }
 
 .projects .section-description{
     max-width:700px;
     margin:1.5rem auto 4rem;
-    color:#666;
+    color:var(--color-white);
     line-height:1.8;
 }
 
@@ -1252,7 +1238,7 @@ textarea{
 ================================================== */
 
 .footer{
-    background:#111;
+    background:var(--color-primary);
     color:#fff;
     padding:5rem 0 0;
 }
