@@ -126,14 +126,14 @@ p{
 
 .header.scrolled{
 
-    background:rgba(15,22,30,.92);
+   /* background:rgba(15,22,30,.92);
 
     backdrop-filter:blur(12px);
 
     box-shadow:0 8px 30px rgba(0,0,0,.18);
 
     height:80px;
-
+   */
 }
 
 /* ==================================================
@@ -225,7 +225,7 @@ p{
 
     width:22px;
 
-    height:18px;
+    height: 18px;
 
 }
 
@@ -450,6 +450,8 @@ p{
 .navigation-drawer-social{
 
     margin-top:3rem;
+    display:flex;
+    justify-content: space-between
 
 }
 
@@ -1342,4 +1344,30 @@ textarea{
 .back-to-top.show{
     opacity:1;
     visibility:visible;
+}
+
+/* ========================== 
+icons
+========================== */
+
+.icon-g{
+    width:24px;
+    height:24px;
+    display:inline-flex;
+    flex-shrink:0;
+    color:inherit;
+}
+
+.icon-m{
+    width:40px;
+    height:40px;
+    color:var(--color-primary);
+}
+
+.icon-p{
+
+    width:18px;
+
+    height:18px;
+
 }
