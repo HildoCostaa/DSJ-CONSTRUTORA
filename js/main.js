@@ -1,6 +1,7 @@
 import './menu.js';
 import './scroll.js';
 import './form.js';
+import './animation.js';
 /*
 ==========================================
 
@@ -10,6 +11,8 @@ Arquivo principal
 
 ==========================================
 */
+
+import { initAnimations } from "./animation.js";
 
 document.addEventListener("DOMContentLoaded",()=>{
 

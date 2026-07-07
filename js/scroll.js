@@ -6,9 +6,18 @@ HEADER SCROLL
 ==========================================
 */
 
+/*
+==========================================
+
+HEADER SCROLL
+
+==========================================
+*/
+
 function initHeaderScroll() {
 
     const header = document.querySelector(".header");
+
     const backToTop = document.querySelector(".back-to-top");
 
     if (!header) return;
@@ -43,20 +52,25 @@ function initHeaderScroll() {
 
     window.addEventListener("scroll", updateHeader);
 
-}
-if (backToTop) {
+    /* ==================================================
+       BOTÃO VOLTAR AO TOPO
+    ================================================== */
 
-    backToTop.addEventListener("click", () => {
+    if (backToTop) {
 
-        window.scrollTo({
+        backToTop.addEventListener("click", () => {
 
-            top:0,
+            window.scrollTo({
 
-            behavior:"smooth"
+                top: 0,
+
+                behavior: "smooth"
+
+            });
 
         });
 
-    });
+    }
 
 }
 

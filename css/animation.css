@@ -87,3 +87,74 @@
     }
 
 }
+
+/* ==================================================
+   ANIMATION DEFAULT
+================================================== */
+
+[data-animation]{
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+    will-change:opacity, transform;
+
+}
+/* ==================================================
+   ANIMATION ACTIVE
+================================================== */
+
+[data-animation].animate{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translate3d(0,0,0);
+
+}
+
+/* ==================================================
+   FADE UP
+================================================== */
+
+[data-animation="fade-up"]{
+    transform:translateY(40px);
+}
+
+/* ==================================================
+   FADE DOWN
+================================================== */
+
+[data-animation="fade-down"]{
+    transform:translateY(-40px);
+}
+
+/* ==================================================
+   FADE LEFT
+================================================== */
+
+[data-animation="fade-left"]{
+    transform:translateX(-40px);
+}
+
+/* ==================================================
+   FADE RIGHT
+================================================== */
+
+[data-animation="fade-right"]{
+    transform:translateX(40px);
+}
+
+/* ==================================================
+   ZOOM
+================================================== */
+
+[data-animation="zoom"]{
+    transform:scale(.92);
+}
