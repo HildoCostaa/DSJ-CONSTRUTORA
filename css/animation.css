@@ -2,21 +2,25 @@
    TRANSIÇÕES
 ================================================== */
 
-*{
 
-    transition:
 
-        background-color .3s ease,
+    a,
+    button,
+    .button,
+    .project-card,
+    .mission-card,
+    .advantage-card,
+    [data-animation]{
 
-        color .3s ease,
+        transition:
+            background-color .3s ease,
+            color .3s ease,
+            border-color .3s ease,
+            transform .3s ease,
+            opacity .3s ease;
 
-        border-color .3s ease,
+        }
 
-        transform .3s ease,
-
-        opacity .3s ease;
-
-}
 
 /* ==================================================
    FADE

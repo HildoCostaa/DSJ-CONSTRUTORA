@@ -125,8 +125,8 @@ p{
 ================================================== */
 
 .header.scrolled{
-
-   /* background:rgba(15,22,30,.92);
+ /*
+   background:rgba(15,22,30,.92);
 
     backdrop-filter:blur(12px);
 
@@ -142,8 +142,8 @@ p{
 
 .header.scrolled .header-logo img{
 
-    height:72px;
-
+   /* height:72px;
+    */
 }
 /* ==================================================
    HEADER CONTAINER
@@ -962,7 +962,7 @@ p{
     width:64px;
     height:64px;
     border-radius:50%;
-    background:rgba(197,34,34,.08);
+    background:rgba(243, 241, 241, 0.08);
 }
 
 .mission-card h3{
