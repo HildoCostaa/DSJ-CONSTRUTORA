@@ -556,30 +556,28 @@ p{
     display:flex;
     align-items:center;
     overflow:hidden;
-    background-image:url("../img/hero/hero-bg.jpg");
+    background-image:url("../img/imgherodesktop.png");
     background-size:cover;
     background-position:center;
     background-repeat:no-repeat;
+}
+
+
+
+@media (max-width:768px){
+
+    .hero{
+        background-image:url("../img/imgheromobile.png");
+    }
+
 }
 /* ==================================================
    HERO OVERLAY
 ================================================== */
 .hero-overlay{
-
     position:absolute;
-
     inset:0;
-
-    background:
-        linear-gradient(
-            90deg,
-            rgba(14,22,30,.88) 0%,
-            rgba(14,22,30,.72) 80%,
-            rgba(14,22,30,.35) 100%
-        );
-
     z-index:1;
-
 }
 
 
@@ -646,7 +644,7 @@ p{
 .hero-title{
 
     font-size:clamp(3.5rem,7vw,5.8rem);
-    color:rgb(36, 34, 34);
+    color:rgb(255, 253, 253);
     font-family:var(--font-title);
     line-height:1;
     max-width:700px;
@@ -960,7 +958,7 @@ p{
 
 .mission-icon{
     width:64px;
-    height:64px;
+    height:50px;
     border-radius:50%;
     background:rgba(243, 241, 241, 0.08);
 }
@@ -1029,9 +1027,10 @@ p{
 
 .advantage-icon{
     width:64px;
-    height:64px;
+    height:50px;
     border-radius:50%;
-    background:rgba(197,34,34,.08);
+    background:#fafafa;
+
 }
 
 .advantage-card h3{
@@ -1265,7 +1264,7 @@ textarea{
 }
 
 .footer-logo img{
-    width:180px;
+    width:140px;
     display:block;
 }
 
@@ -1297,11 +1296,11 @@ textarea{
 .footer a{
     color:#bbb;
     text-decoration:none;
-    transition:.3s;
+    transition:.5s;
 }
 
 .footer a:hover{
-    color:var(--color-primary);
+    color:var(--color-white);
 }
 
 /* ==================================================
