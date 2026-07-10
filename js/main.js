@@ -2,6 +2,7 @@ import './menu.js';
 import './scroll.js';
 import './form.js';
 import './animation.js';
+import './counter.js';
 /*
 ==========================================
 

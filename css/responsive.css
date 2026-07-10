@@ -38,6 +38,11 @@
     .advantages-grid{
         grid-template-columns:1fr;
     }
+    .stats-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
 
 }
 
@@ -94,6 +99,26 @@
     .header-logo img{
         height:70px;
     }
+     .stats-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .stat-card{
+
+        border-right:none;
+
+        border-bottom:1px solid rgba(255,255,255,.08);
+
+    }
+
+    .stat-card:last-child{
+
+        border-bottom:none;
+
+    }
+
 
 }
 

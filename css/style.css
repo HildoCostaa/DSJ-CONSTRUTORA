@@ -1364,9 +1364,70 @@ icons
 }
 
 .icon-p{
-
     width:18px;
-
     height:18px;
+}
+/* ==================================================
+   STATS
+================================================== */
+.stats{
+    background:var(--color-white);
+    padding:0;
+}
 
+/* ==================================================
+   GRID
+================================================== */
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(5,1fr);
+}
+
+/* ==================================================
+   CARD
+================================================== */
+
+.stat-card{
+    padding:5rem 2rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    border-right:2px solid rgba(0, 0, 0, 0.08);
+}
+
+.stat-card:last-child{
+    border-right:none;
+}
+/* ==================================================
+   NUMBER
+================================================== */
+.stat-card h2{
+    font-size:clamp(2.5rem,4vw,4rem);
+    color:var(--color-primary);
+    font-family:var(--font-title);
+    font-weight:400;
+}
+
+/* ==================================================
+   LINE
+================================================== */
+
+.stat-card span{
+    width:36px;
+    height:1px;
+    background:rgba(0, 0, 0, 0.25);
+    margin:1rem 0;
+}
+/* ==================================================
+   TEXT
+================================================== */
+
+.stat-card p{
+    color:var(--color-primary);
+    text-transform:uppercase;
+    letter-spacing:.18em;
+    font-size:.82rem;
 }
