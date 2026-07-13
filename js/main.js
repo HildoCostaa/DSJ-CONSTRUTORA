@@ -3,6 +3,8 @@ import './scroll.js';
 import './form.js';
 import './animation.js';
 import './counter.js';
+import './filter.js';
+import './modal.js'
 /*
 ==========================================
 

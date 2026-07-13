@@ -59,13 +59,16 @@ Desenvolver um website institucional responsivo para a DSJ Construtora, apresent
 dsj-construtora/
 │
 ├-- index.html
+|-- obras.html
 │
 |-----css/
 |       |--reset.css
 │   │   ├-- style.css
 │   │   ├-- variables.css
 │   │   ├-- responsive.css
-│   │   └-- animations.css
+│   │   |- animations.css
+|   |   |-- interaction.css
+|   |   |-- styleobras.css
 │   │
 │   ├── js/
 │   │   ├-- main.js
