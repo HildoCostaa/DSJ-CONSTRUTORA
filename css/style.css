@@ -1440,3 +1440,7 @@ icons
    PAGE HERO
 ================================================== */
 
+section{
+    padding:var(--space-3xl) 0;
+    overflow:hidden;
+}
