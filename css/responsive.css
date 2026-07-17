@@ -48,10 +48,13 @@
         grid-template-columns:repeat(2,1fr);
 
     }
+    .project-modal-image{
 
+        height:360px;
+
+    }
 
 }
-
 /* ==================================================
    TABLET
 ================================================== */
@@ -80,6 +83,27 @@
     .button{
         width:100%;
     }
+    .project-modal-body{
+        grid-template-columns:1fr;
+        gap:1.5rem;
+        padding:1.5rem;
+    }
+    .project-modal-image{
+        width:100%;
+        height:240px;
+        object-fit:cover;
+    }
+    .project-modal-close{
+        top:12px;
+        right:12px;
+        width:38px;
+        height:38px;
+    }
+
+    .project-modal-panel{
+        width:min(100%,95vw);
+        border-radius:20px;
+    }
 
 }
 
@@ -106,23 +130,18 @@
         height:70px;
     }
      .stats-grid{
-
         grid-template-columns:1fr;
-
     }
 
     .stat-card{
-
         border-right:none;
-
         border-bottom:1px solid rgba(255,255,255,.08);
-
     }
-
     .stat-card:last-child{
-
         border-bottom:none;
-
+    }
+    .project-modal-content{
+        gap:1rem;
     }
 
 
