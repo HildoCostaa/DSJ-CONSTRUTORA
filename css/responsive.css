@@ -83,14 +83,13 @@
     .button{
         width:100%;
     }
-    .project-modal-body{
+   .project-modal-body{
         grid-template-columns:1fr;
-        gap:1.5rem;
         padding:1.5rem;
     }
     .project-modal-image{
         width:100%;
-        height:240px;
+        height:280px;
         object-fit:cover;
     }
     .project-modal-close{
@@ -103,6 +102,11 @@
     .project-modal-panel{
         width:min(100%,95vw);
         border-radius:20px;
+    }
+    .project-modal-viewer{
+
+        aspect-ratio:16 / 14;
+
     }
 
 }

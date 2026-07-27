@@ -229,23 +229,40 @@ MODAL OVERLAY
 }
 .project-modal-body{
     display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:3rem;
+    grid-template-columns:1.2fr .8fr;
+    gap:2.5rem;
     padding:2.5rem;
     align-items:start;
 }
 
-.project-modal-image{
+.project-modal-image,
+.project-modal-video{
     width:100%;
-    height:500px;
+    height:100%;
     object-fit:cover;
-    border-radius:20px;
+    display:block;
 }
 
 .project-modal-content{
     display:flex;
     flex-direction:column;
-    gap:1.5rem;
+    justify-content:center;
+    gap:1.2rem;
+}
+/* ===========================
+PROJECT MODAL VIEWER
+============================= */
+
+.project-modal-viewer{
+    position:relative;
+    width:100%;
+    aspect-ratio:16/12;
+    overflow:hidden;
+    border-radius:20px;
+    background:#f3f3f3;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 .project-modal-category{
@@ -266,22 +283,97 @@ body.modal-open{
 }
 
 .project-modal-close{
+
     position:absolute;
-    top:16px;
-    right:16px;
+
+    top:1rem;
+
+    right:1rem;
+
     width:42px;
+
     height:42px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
+
     border-radius:50%;
-    background:rgba(255,255,255,.95);
-    color:var(--color-black);
-    cursor:pointer;
+
+    background:#fff;
+
     z-index:20;
-    transition:.3s;
+
 }
 .project-modal-close:hover{
     background:var(--color-primary);
     color:var(--color-white);
 }
+/* ==================
+indicadores
+===================== */
+.project-modal-indicators{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:.75rem;
+}
+.project-modal-dot{
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#868686;
+    cursor:pointer;
+    transition:.3s;
+}
+.project-modal-dot.is-active{
+    background:var(--color-primary);
+    transform:scale(1.2);
+}
+.project-modal-video{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:20px;
+    display:block;
+}
+.project-modal-media{
+    display:flex;
+    flex-direction:column;
+    gap:1rem;
+}
+
+.project-modal-prev,
+.project-modal-next{
+    position:absolute;
+    top:50%;
+    transform:translateY(-50%);
+    width:48px;
+    height:48px;
+    border:none;
+    border-radius:50%;
+    background:rgba(0,0,0,.45);
+    color:#fff;
+    cursor:pointer;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:1.2rem;
+    transition:.3s;
+    z-index:10;
+}
+.project-modal-prev{
+
+    left:16px;
+
+}
+.project-modal-next{
+
+    right:16px;
+
+}
+.project-modal-prev:hover,
+.project-modal-next:hover{
+
+    background:var(--color-primary);
+
+    transform:translateY(-50%) scale(1.08);
+
+}
+

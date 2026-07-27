@@ -5,6 +5,7 @@ PROJECT MODAL
 
 ==========================================
 */
+import { projects } from "./project.js";
 
 function initModal() {
 
@@ -24,30 +25,30 @@ function initModal() {
 
     const buttons = document.querySelectorAll(".portfolio-link");
 
+    let currentProject = null;
+    
+    let currentSlide = 0;
+
     // ==============================
     // ABRIR MODAL
     // ==============================
 
     function openModal(card) {
 
-        const project = {
+        const projectId = card.dataset.project;
 
-            title: card.dataset.title,
+        currentProject = projects[projectId];
 
-            category: card.dataset.category,
+        currentSlide = 0;
+        if (!currentProject) {
 
-            city: card.dataset.city,
+            console.error(`Projeto "${projectId}" não encontrado.`);
 
-            area: card.dataset.area,
+            return;
 
-            description: card.dataset.description,
+        }
 
-            image: card.dataset.image
-
-        };
-
-        modalBody.innerHTML = renderProject(project);
-
+        renderCurrentSlide();
         modal.classList.add("is-open");
 
         document.body.classList.add("modal-open");
@@ -55,6 +56,9 @@ function initModal() {
         modal.setAttribute("aria-hidden", "false");
         console.log(card);
         console.log(card.dataset);
+        console.log("Project ID:", projectId);
+        console.log("Projects:", projects);
+        console.log("Projeto encontrado:", projects[projectId]);
 
     }
 
@@ -71,19 +75,143 @@ function initModal() {
         modal.setAttribute("aria-hidden", "true");
 
     }
+// ===============================
+// ======CURRENT
+// ===============================
+    function renderCurrentSlide(){
 
+        const media = currentProject.slides[currentSlide];
+
+        modalBody.innerHTML = renderProject(
+            currentProject,
+            media
+        );
+        bindGalleryEvents()
+    }
+    function renderIndicators() {
+
+        return currentProject.slides
+            .map((_, index) => {
+
+                return `
+
+                    <button
+                        class="project-modal-dot ${index === currentSlide ? "is-active" : ""}"
+                        data-index="${index}"
+                        type="button"
+                        aria-label="Ir para mídia ${index + 1}">
+                    </button>
+
+                `;
+
+            })
+            .join("");
+
+    }
+
+    function bindGalleryEvents() {
+        const previousButton = modalBody.querySelector(".project-modal-prev");
+
+        const nextButton = modalBody.querySelector(".project-modal-next");
+
+        const dots = modalBody.querySelectorAll(".project-modal-dot");
+        dots.forEach((dot) => {
+
+            dot.addEventListener("click", () => {
+
+                currentSlide = Number(dot.dataset.index);
+
+                renderCurrentSlide();
+
+            });
+
+        });
+     if(nextButton){
+
+            nextButton.addEventListener("click",()=>{
+
+                currentSlide++;
+
+                if(currentSlide >= currentProject.slides.length){
+
+                    currentSlide = 0;
+
+                }
+
+                renderCurrentSlide();
+
+            });
+
+        }
+
+       if(previousButton){
+
+            previousButton.addEventListener("click",()=>{
+
+                currentSlide--;
+
+                if(currentSlide < 0){
+
+                    currentSlide = currentProject.slides.length - 1;
+
+                }
+
+                renderCurrentSlide();
+
+            });
+
+        }
+    }
     // ==============================
     // RENDERIZAR
     // ==============================
 
-    function renderProject(project) {
+
+    function renderProject(project, media) {
+        const hasMultipleSlides = project.slides.length > 1;
 
         return `
+            <div class="project-modal-media">
 
-            <img
-                src="${project.image}"
-                alt="${project.title}"
-                class="project-modal-image">
+                <div class="project-modal-viewer">
+
+                    ${renderMedia(media)}
+                    ${hasMultipleSlides ? `
+
+                        <button
+                            class="project-modal-prev"
+                            type="button"
+                            aria-label="Mídia anterior">
+
+                            ❮
+
+                        </button>
+
+                        ` : ""
+                    }
+
+                    ${hasMultipleSlides ? `
+
+                        <button
+                            class="project-modal-next"
+                            type="button"
+                            aria-label="Próxima mídia">
+
+                            ❯
+
+                        </button>
+
+                        ` : ""
+                    }
+                </div>
+
+                <div class="project-modal-indicators">
+
+                    ${renderIndicators()}
+
+                </div>  
+                
+            </div>
 
             <div class="project-modal-content">
 
@@ -109,7 +237,7 @@ function initModal() {
 
                 <p>
 
-                    ${project.description}
+                    ${media.description}
 
                 </p>
 
@@ -127,6 +255,33 @@ function initModal() {
 
     }
 
+    function renderMedia(media) {
+
+        if (media.type === "video") {
+
+            return `
+                <video
+                    class="project-modal-video"
+                    controls
+                    playsinline
+                    preload="metadata">
+
+                    <source
+                        src="${media.src}"
+                        type="video/mp4">
+
+                </video>
+            `;
+        }
+
+        return `
+            <img
+                src="${media.src}"
+                alt=""
+                class="project-modal-image">
+        `;
+    }
+
     // ==============================
     // EVENTOS DOS BOTÕES
     // ==============================
@@ -134,7 +289,7 @@ function initModal() {
     buttons.forEach((button) => {
 
         button.addEventListener("click", () => {
-
+            console.log("cclick identificado!")
             const card = button.closest(".portfolio-card");
 
             if (!card) return;
