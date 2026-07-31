@@ -36,17 +36,6 @@ export const projects = {
 
                 type: "video",
 
-                src: "videos/obrarealizada1.mp4",
-
-                title: "Resultado Final",
-
-                description: "Processo de pintura externa c/ maquina de pulverização. Excelente acabamento com pistola de pintura!"
-
-            },
-            {
-
-                type: "video",
-
                 src: "videos/obrarealizada1(1).mp4",
 
                 title: "Resultado Final",
@@ -149,9 +138,233 @@ export const projects = {
 
                 description: "Cada piso é assentado com planejamento e cuidado, proporcionando um resultado resistente, sofisticado e valorizando cada ambiente."
 
+            },
+            {
+
+                type: "video",
+
+                src: "videos/obrarealizada3(1).mp4",
+
+                title: "Resultado Final",
+
+                description: "Cada piso é assentado com planejamento e cuidado, proporcionando um resultado resistente, sofisticado e valorizando cada ambiente."
+
             }
         ]
     },
-    
+    "residencia-alto-padrao4":{
+        title: "Residência Alto Padrão",
 
+        category: "Residencial",
+
+        city: "Cuiabá - MT",
+
+        area: "320 m²",
+        
+        slides:[
+            {
+
+                type: "image",
+
+                src: "img/obrarealizada4.jpg",
+
+                title: "Resultado Final",
+
+                description: "A pintura da fachada vai além da estética: ela protege, renova e valoriza o imóvel. Nossa equipe trabalha com precisão para entregar um acabamento de excelência e uma aparência impecável."
+
+            },
+            {
+
+                type: "video",
+
+                src: "videos/obrarealizada4(1).mp4",
+
+                title: "Resultado Final",
+
+                description: "A pintura da fachada vai além da estética: ela protege, renova e valoriza o imóvel. Nossa equipe trabalha com precisão para entregar um acabamento de excelência e uma aparência impecável."
+
+            },
+            {
+
+                type: "video",
+
+                src: "videos/obrarealizada4(2).mp4",
+
+                title: "Resultado Final",
+
+                description: "A pintura da fachada vai além da estética: ela protege, renova e valoriza o imóvel. Nossa equipe trabalha com precisão para entregar um acabamento de excelência e uma aparência impecável."
+
+            },
+            {
+
+                type: "video",
+
+                src: "videos/obrarealizada4(3).mp4",
+
+                title: "Resultado Final",
+
+                description: "A pintura da fachada vai além da estética: ela protege, renova e valoriza o imóvel. Nossa equipe trabalha com precisão para entregar um acabamento de excelência e uma aparência impecável."
+
+            },
+            {
+
+                type: "video",
+
+                src: "videos/obrarealizada4(4).mp4",
+
+                title: "Resultado Final",
+
+                description: "Processo de polimento para impermeabilização da piscina! Processo essêncial para uma qualidade e durabilidade do seu imóvel!"
+
+            },
+            {
+
+                type: "video",
+
+                src: "videos/obrarealizada4(5).mp4",
+
+                title: "Resultado Final",
+
+                description: "Cada piso é assentado com planejamento e cuidado, proporcionando um resultado resistente, sofisticado e valorizando cada ambiente"
+
+            },
+        ]
+    },
+    "residencia-alto-padrao5":{
+        title: "Residência Alto Padrão",
+
+        category: "Residencial",
+
+        city: "Cuiabá - MT",
+
+        area: "110 m²",
+        
+        slides:[
+            {
+
+                type: "image",
+
+                src: "img/obrarealizada5.jpg",
+
+                title: "Resultado Final",
+
+                description: "A pintura da fachada vai além da estética: ela protege, renova e valoriza o imóvel. Nossa equipe trabalha com precisão para entregar um acabamento de excelência e uma aparência impecável."
+
+            },
+             {
+
+                type: "video",
+
+                src: "videos/obrarealizada5.mp4",
+
+                title: "Resultado Final",
+
+                description: "Cada piso é assentado com planejamento e cuidado, proporcionando um resultado resistente, sofisticado e valorizando cada ambiente"
+
+            },
+
+             {
+
+                type: "image",
+
+                src: "img/obrarealizada5(1).jpg",
+
+                title: "Resultado Final",
+
+                description: "A pintura da fachada vai além da estética: ela protege, renova e valoriza o imóvel. Nossa equipe trabalha com precisão para entregar um acabamento de excelência e uma aparência impecável."
+
+            },
+             {
+
+                type: "video",
+
+                src: "videos/obrarealizada5(1).mp4",
+
+                title: "Resultado Final",
+
+                description: "Cada piso é assentado com planejamento e cuidado, proporcionando um resultado resistente, sofisticado e valorizando cada ambiente"
+
+            },
+             {
+
+                type: "video",
+
+                src: "videos/obrarealizada5(2).mp4",
+
+                title: "Resultado Final",
+
+                description: "Cada piso é assentado com planejamento e cuidado, proporcionando um resultado resistente, sofisticado e valorizando cada ambiente"
+
+            },
+            {
+
+                type: "video",
+
+                src: "videos/obrarealizada5(4).mp4",
+
+                title: "Resultado Final",
+
+                description: "Cada piso é assentado com planejamento e cuidado, proporcionando um resultado resistente, sofisticado e valorizando cada ambiente"
+
+            },
+            {
+
+                type: "video",
+
+                src: "videos/obrarealizada5(5).mp4",
+
+                title: "Resultado Final",
+
+                description: "Cada piso é assentado com planejamento e cuidado, proporcionando um resultado resistente, sofisticado e valorizando cada ambiente"
+
+            },
+        
+        ]
+        
+    },
+    "residencia-alto-padrao6":{
+        title: "Residência Alto Padrão",
+
+        category: "Residencial",
+
+        city: "Cuiabá - MT",
+
+        area: "110 m²",
+        
+        slides:[
+            {
+
+                type: "image",
+
+                src: "img/obrarealizada6.jpg",
+
+                title: "Resultado Final",
+
+                description: "A pintura da fachada vai além da estética: ela protege, renova e valoriza o imóvel. Nossa equipe trabalha com precisão para entregar um acabamento de excelência e uma aparência impecável."
+
+            },
+            {
+
+                type: "video",
+
+                src: "videos/obrarealizada6.mp4",
+
+                title: "Resultado Final",
+
+                description: "Cada piso é assentado com planejamento e cuidado, proporcionando um resultado resistente, sofisticado e valorizando cada ambiente"
+
+            },
+            {
+
+                type: "video",
+
+                src: "videos/obrarealizada6(1).mp4",
+
+                title: "Resultado Final",
+
+                description: "Cada piso é assentado com planejamento e cuidado, proporcionando um resultado resistente, sofisticado e valorizando cada ambiente"
+
+            },
+        ]
+    }
 };
